@@ -1,5 +1,3 @@
-<main.cpp>
-
 #if defined(__linux__) || defined(__APPLE__)
 #include <fcntl.h>
 #include <termios.h>
@@ -346,33 +344,3 @@ int syncwrite(int port_num, int group_num, int goal_velocity1, int goal_velocity
     return 0;
  
 }
-
-
-<MaKefile>
-
-TARGET      = linetracer
- 
-DIR_DXL    = /usr/local/lib
-DIR_OBJS   = .objects
- 
-CX          = g++
-CXFLAGS     = -O2 -O3 -DLINUX -D_GNU_SOURCE -Wall $(INCLUDES) $(FORMAT) -g
- 
-INCLUDES   = -I/home/ncslab/DynamixelSDK/c/include/dynamixel_sdk
-LIBRARIES  += -ldxl_x86_c
-LIBRARIES  += -lrt
-LIBRARIES  += `pkg-config opencv4 --cflags --libs`
- 
-SOURCES = main.cpp
- 
-.PHONY: all clean
- 
-$(TARGET) : $(SOURCES)
-    $(CX) $(CXFLAGS) $(SOURCES) -o $(TARGET) $(LIBRARIES)
- 
-all: $(TARGET)
- 
-clean:
-    rm -rf $(TARGET) $(DIR_OBJS) core *~ *.a *.so *.lo
-    
-영상 주소 : https://www.youtube.com/watch?v=SiX8eZ_Vdwc
