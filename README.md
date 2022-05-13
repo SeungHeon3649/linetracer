@@ -6,4 +6,4 @@ linux 버전 : 18.04(melodic)
 사용 언어 : C++
 
 영상 주소 : https://www.youtube.com/watch?v=SiX8eZ_Vdwc
-![image](https://user-images.githubusercontent.com/94602281/168226220-4192ff09-b313-4fd5-82ba-4a422718dbff.png)
+![image](https://user-images.githubusercontent.com/94602281/168226336-cb7d9794-f5ed-4cb9-af34-f206160f12c0.png)
