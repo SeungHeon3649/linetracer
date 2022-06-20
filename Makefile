@@ -22,3 +22,5 @@ all: $(TARGET)
  
 clean:
     rm -rf $(TARGET) $(DIR_OBJS) core *~ *.a *.so *.lo
+
+
