@@ -1,6 +1,7 @@
-#linetracer
-
-작품 설명 : jetson nano에서 OpenCV를 이용하여 차선을 인식후 차선을 따라간다.
+# 작품 설명
+- OpenCV를 이용하여 차선 인식
+- dynamixel 모터를 이용하여 주행
+- jetson nano를 이용하여 Linux 환경에서 원격 제어
 
 linux 버전 : 18.04(melodic)
 사용 언어 : C++
